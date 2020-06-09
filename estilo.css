@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/*para que los tamaños encajen */
+}
+
+body{
+    padding: 100px;
+    background: linear-gradient(orange, white);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+header nav{
+    background: url('universo1.jpg');
+    margin-bottom: 10px;
+    width: 100%;
+    height: 80px;
+}
+nav ul li a:hover{
+    color: red; /*para cuando el mouse se ponga cambie de color en el menu*/
+}
+.contenedor{
+    width: 95%;
+    max-width: 1000px;
+    margin: auto ;
+    
+}
+.contenedor p{
+    margin-bottom: 40px; /*espaciado, para que la pagina se haga larga */
+}
+
+header nav ul{
+    list-style: none;
+    overflow: hidden; /*porque mas adelante voy a usae float left, entonces para que ese funcione bien y no halla problema*/
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 15px; 
+    font-weight: bold;
+    
+}
+header nav ul li a:hover{
+    background: pink;
+}
+.contenedor{
+    font-size: 1.3vw;
+}
+
+.logo p a{ /*se va al logo al parrafo del titulo*/
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo{
+    width: 40%;
+    height: 70px;
+    float: left; 
+    padding-top: 10px; /* le quiero poner que el "EL" del titulo no este pegado al encabezaso*/
+    
+}
+.nev >li {
+    float: left;
+
+}
+.nev li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nev li:hover > ul{ /* para que al momento de pasar el mouse sobre el menu aparezca los submenu*/
+    display: block;
+
+}
+/*.menu-fixed{
+    position: fixed;
+    z-index: 1000px ; para que se ponga el menú sobre todos los elementos
+    top: 0;
+    width: 100%;
+    min-width: 1000px;
+    box-shadow: 0px, 4px, 3px rgb(0,0,0.5);
+    text-align: right;
+} esto era para cuando se deslizara en la pantalla para abajo el encabezado no se escondiera funcionó pero el titulo no quedaba en el encabezado*/ 
+#img1{
+    width: 300px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000;
+    padding: 5px;
+    float: right;
+
+}
+#mapa{
+    width: 300px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    padding: 5px;
+    float: right;
+}
+#img1:hover{
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 15px navy;
+    transform: rotate(360deg);
+}
+#giphy{
+    width: 300px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000;
+    padding: 5px;
+    float: right;
+}
+
+#img2{
+    width: 300px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    float: right;
+    padding: 5px;
+    box-shadow: 0px, 4px, 3px rgb(0,0,0.5);
+}
+#img2:hover{
+    
+    filter: grayscale(80%);
+}
+.anima{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(red, black);
+    animation: escalas 12s linear;
+    float: right;
+}
+#img3{
+    width: 200px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000;
+    padding: 5px;
+     
+
+   
+}
+#img4{
+    width: 200px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000;
+    padding: 5px;
+    float: right;
+}
+#img4:hover{
+    filter: blur(5px)
+}
+#img5{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000;
+    padding: 5px;
+    float: right;
+    display: block;
+}
+#img6{
+    width: 200px;
+    height: 200px;
+    border: 5px ;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+    float: right;
+    border-style: solid;
+}
+#img6:hover{
+    color: white;
+}
+
+#img7{
+    width: 200px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000;
+    padding: 5px;
+    float: right;
+}
+#img8{
+    width: 200px;
+    height: 200px;
+    border: 5px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px,5px,0px,#000;
+    padding: 5px;
+    float: right;
+}
